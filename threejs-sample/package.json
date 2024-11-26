@@ -1,0 +1,22 @@
+{
+  "name": "threejs-sample",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8080",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 8080",
+    "clean": "rm -rf dist node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "common": "workspace:*",
+    "@types/three": "^0.170.0",
+    "three": "^0.170.0",
+    "3d-tiles-renderer": "^0.3.41"
+  }
+}

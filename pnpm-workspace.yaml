@@ -1,0 +1,3 @@
+packages:
+  - "common"
+  - "threejs-sample"

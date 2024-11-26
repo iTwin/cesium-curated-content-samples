@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "three/addons/controls/*": ["node_modules/@types/three/examples/jsm/controls/*"],
+      "three/addons/loaders/*": ["node_modules/@types/three/examples/jsm/loaders/*"],
+      "three/addons/postprocessing/*": ["node_modules/@types/three/examples/jsm/postprocessing/*"],
+    },
+  },
+  "include": ["src/**/*.ts", "src/threejs/taa/TAARenderPass.js"],
+}

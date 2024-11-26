@@ -1,24 +1,14 @@
+# cesium-curated-content-samples
 
-REMOVE this section upon creating the template.
+This repository contains samples and tutorials for how to use the [Cesium Curated Content](https://developer.bentley.com/apis/cesium-curated-content/) REST API to view [Cesium 3D Tiles](https://github.com/CesiumGS/3d-tiles) tilesets of iModels using different 3D libraries.
 
-This template provides a barebones setup for any sample application being created for the iTwin Platform.
+- Visualizing Cesium Moon Terrain using threejs
 
-Once you create a repo from this, please fill in all of the "FIXME" sections.
+## Set-up
 
------------------------------
+The samples each have a README with details about how to run them and any necessary environment variables. To set up the repository the first time:
 
-# {Template} API Sample App
-
-Copyright © Bentley Systems, Incorporated. All rights reserved.
-
-An iTwin sample application that demonstrates `FIXME: PLEASE FILL IN`
-
-This application contains sample code that should not be used in a production environment. It contains no retry logic and minimal logging/error handling.
-
-## Prerequisites
-
-* [Git](https://git-scm.com/)
-
-`FIXME: ADD ANYMORE REQUIREMENTS`
-
-## Development Setup
+- Clone the repository
+- Install pnpm v9 using [corepack](https://pnpm.io/installation#using-corepack): `corepack enable pnpm` (or another method)
+- `pnpm install` at the root to install all packages
+- `pnpm build` to build all packages
