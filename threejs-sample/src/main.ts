@@ -14,10 +14,9 @@ if (!iTwinId || !clientId) {
 }
 
 const authClient = await getBentleyAuthClient(clientId, imsPrefix);
-const accessToken = await authClient.getAccessToken();
 
+const accessToken = await authClient.getAccessToken();
 const cesiumMoonTerrianTiles = await getCesiumMoonTerrianTiles(iTwinId, imsPrefix, accessToken);
-console.log('LOG[70]: curatedCesiumContentUrl ' + JSON.stringify(cesiumMoonTerrianTiles, null, 2));
 
 var camera = {} as THREE.PerspectiveCamera;
 var controls = {} as GlobeControls;
