@@ -29,11 +29,8 @@ init();
 animate();
 
 function reinstantiateTiles() {
-
 	if ( tiles ) {
-
 		scene.remove( tiles.group );
-
 	}
 
 	tiles = new TilesRenderer(cesiumMoonTerrianTiles.url);
@@ -51,11 +48,9 @@ function reinstantiateTiles() {
 
 	tiles.setCamera( camera );
 	controls.setTilesRenderer( tiles );
-
 }
 
 function init() {
-
 	// renderer
 	renderer = new THREE.WebGLRenderer( { antialias: true } );
 	renderer.setClearColor( 0x151c1f );
@@ -83,25 +78,23 @@ function init() {
 	const ionOptions = gui.addFolder( 'Ion' );
 	ionOptions.add( {ASSET : "M O O N" }, 'ASSET' );
 	ionOptions.open();
-
 }
 
 function onWindowResize() {
-
 	const aspect = window.innerWidth / window.innerHeight;
 	camera.aspect = aspect;
 	camera.updateProjectionMatrix();
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	renderer.setPixelRatio( window.devicePixelRatio );
-
 }
 
 function animate() {
-
 	requestAnimationFrame( animate );
 
-	if ( ! tiles ) return;
+	if (!tiles) {
+		return;
+	};
 
 	controls.update();
 
@@ -113,5 +106,4 @@ function animate() {
 	tiles.update();
 
 	renderer.render( scene, camera );
-
 }
