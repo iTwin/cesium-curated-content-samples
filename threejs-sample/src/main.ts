@@ -1,25 +1,15 @@
 import "./style.css";
 import * as THREE from "three";
 import { getBentleyAuthClient, getCesiumMoonTerrianTiles } from "common";
-import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
-import { TilesRenderer, LUNAR_ELLIPSOID  } from "3d-tiles-renderer";
-// import { GlobeControls  } from "3d-tiles-renderer/r3f";
-import { GlobeControls } from "3d-tiles-renderer/src/index.js";
+import { GUI } from "lil-gui";
+import { TilesRenderer, LUNAR_ELLIPSOID, GlobeControls  } from "3d-tiles-renderer";
 
 
 const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "qa-";
-const iModelId = import.meta.env.VITE_IMODEL_ID;
 const iTwinId = import.meta.env.VITE_ITWIN_ID;
-const changesetId = import.meta.env.VITE_CHANGESET_ID || "";
 const clientId = import.meta.env.VITE_CLIENT_ID;
 
-console.log('LOG[12]: imsPrefix ' + JSON.stringify(imsPrefix, null, 2));
-console.log('LOG[14]: iModelId ' + JSON.stringify(iModelId, null, 2));
-console.log('LOG[50]: iTwinId ' + JSON.stringify(iTwinId, null, 2));
-console.log('LOG[16]: changesetId ' + JSON.stringify(changesetId, null, 2));
-console.log('LOG[18]: clientId ' + JSON.stringify(clientId, null, 2));
-
-if (!iModelId || !clientId) {
+if (!iTwinId || !clientId) {
   throw new Error("Missing required environment variables");
 }
 
@@ -54,7 +44,7 @@ function reinstantiateTiles() {
 
   tiles.fetchOptions = { headers }
 
-	tiles.ellipsoid.copy( LUNAR_ELLIPSOID );
+	tiles.ellipsoid = LUNAR_ELLIPSOID;
 	tiles.group.rotation.x = - Math.PI / 2;
 	tiles.errorTarget = 20;
 	scene.add( tiles.group );

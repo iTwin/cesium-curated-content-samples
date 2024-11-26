@@ -41,6 +41,9 @@ importers:
       common:
         specifier: workspace:*
         version: link:../common
+      lil-gui:
+        specifier: ^0.20.0
+        version: 0.20.0
       three:
         specifier: ^0.170.0
         version: 0.170.0
