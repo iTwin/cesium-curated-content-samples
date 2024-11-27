@@ -14,6 +14,7 @@
     "vite": "^5.4.11"
   },
   "dependencies": {
+    "@itwin/itwins-client": "1.5.0",
     "common": "workspace:*",
     "@types/three": "^0.170.0",
     "three": "^0.170.0",

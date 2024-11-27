@@ -21,4 +21,4 @@ In a .env file in the `threejs-sample` directory:
 
 - `VITE_IMS_PREFIX` - Bentley IMS authority prefix (should be "dev-", "qa-", or "") (optional, default is "qa-")
 - `VITE_CLIENT_ID` - Client ID needed to sign in with Bentley IMS (required)
-- `VITE_ITWIN_ID` - iTwin Id of an iTwin. You will need to have permission to read this iTwin (required)
+- `VITE_ITWIN_ID` - iTwin Id of an iTwin. You will need to have permission to read this iTwin (optional, if no Id is provided the user's primary account iTwin will be used)
