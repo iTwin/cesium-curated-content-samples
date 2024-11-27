@@ -13,9 +13,9 @@ In a .env file in the `threejs-sample` directory:
 ### Example
 
 ```
-VITE_CLIENT_ID="spa-sH5M88CdnGaxJ4U0xToWhUPFB"
+VITE_CLIENT_ID="**YOUR CLIENT ID**"
 VITE_IMS_PREFIX ="qa-"
-VITE_ITWIN_ID=
+VITE_ITWIN_ID="**OPTIONAL ITWIN ID**"
 ```
 
 ## Steps to run
