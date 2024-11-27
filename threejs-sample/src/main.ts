@@ -60,7 +60,10 @@ function init() {
 	// renderer
 	renderer = new THREE.WebGLRenderer( { antialias: true } );
 	renderer.setClearColor( 0x151c1f );
-	document.body.appendChild( renderer.domElement );
+
+	// prepare html document
+	document.body.appendChild( renderer.domElement );	
+	document.getElementsByClassName('attributes')[0].innerHTML += cesiumMoonTerrianTiles.attributions.map((a: any) => a.html).join("");
 
 	// scene
 	scene = new THREE.Scene();
