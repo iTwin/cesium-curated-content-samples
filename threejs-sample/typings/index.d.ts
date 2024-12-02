@@ -1,4 +1,9 @@
 
+/*---------------------------------------------------------------------------------------------
+* Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+* See LICENSE.md in the project root for license terms and full copyright notice.
+*--------------------------------------------------------------------------------------------*/
+
 import { TilesRenderer, LUNAR_ELLIPSOID  } from "3d-tiles-renderer";
 
 declare module "3d-tiles-renderer" {

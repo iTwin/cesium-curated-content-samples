@@ -1,3 +1,8 @@
+/*---------------------------------------------------------------------------------------------
+* Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+* See LICENSE.md in the project root for license terms and full copyright notice.
+*--------------------------------------------------------------------------------------------*/
+
 export async function getCuratedCesiumContent(iTwinId: string, imsPrefix: string, accessToken: string) {
   const headers = {
       "Authorization": accessToken,
