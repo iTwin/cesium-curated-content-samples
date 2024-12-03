@@ -30,7 +30,7 @@ export async function getCesiumCuratedContentTiles(contentId: string, iTwinId: s
   const response = await fetch(url, { headers });
   const responseJson = await response.json();
 
-  return { url: responseJson.url, accessToken: responseJson.accessToken };
+  return { url: responseJson.url, accessToken: responseJson.accessToken, attributions: responseJson.attributions };
 }
 
 export async function getCesiumMoonTerrianTiles(iTwinId: string, imsPrefix: string, accessToken: string) {
