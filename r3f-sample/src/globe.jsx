@@ -38,7 +38,7 @@ export function Globe ({ accessToken, itwinId, imsPrefix }) {
             <TilesRenderer key={accessToken} group={ { rotation: [ - Math.PI / 2, 0, 0 ] } }>
                 <TilesPlugin plugin={ BentleyCesiumCuratedContentPlugin } args={ {accessToken, itwinId, imsPrefix} } />
                 <GlobeControls enableDamping={ true } />
-        <TilesAttributionOverlay />
+                <TilesAttributionOverlay />
             </TilesRenderer>
            
             <Environment
