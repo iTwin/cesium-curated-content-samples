@@ -1,11 +1,16 @@
+/*---------------------------------------------------------------------------------------------
+* Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+* See LICENSE.md in the project root for license terms and full copyright notice.
+*--------------------------------------------------------------------------------------------*/
+
 import {
     TilesPlugin,
     TilesRenderer,
     GlobeControls,
-    CameraTransition
-     
+    CameraTransition,
+    TilesAttributionOverlay     
 } from '3d-tiles-renderer/r3f';
-import { BentleyCesiumCuratedContentPlugin } from './BentleyCesiumCuratedContentPlugin';
+import { BentleyCesiumCuratedContentPlugin } from './plugins/BentleyCesiumCuratedContentPlugin';
 import { Canvas } from '@react-three/fiber';
 import { Environment  } from '@react-three/drei';
  
@@ -33,6 +38,7 @@ export function Globe ({ accessToken, itwinId, imsPrefix }) {
             <TilesRenderer key={accessToken} group={ { rotation: [ - Math.PI / 2, 0, 0 ] } }>
                 <TilesPlugin plugin={ BentleyCesiumCuratedContentPlugin } args={ {accessToken, itwinId, imsPrefix} } />
                 <GlobeControls enableDamping={ true } />
+        <TilesAttributionOverlay />
             </TilesRenderer>
            
             <Environment
