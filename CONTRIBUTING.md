@@ -2,7 +2,7 @@
 
 We welcome all types of contributions.
 
-Found a bug? Please create an [issue](https://github.com/iTwin/{FIXME}/issues).
+Found a bug? Please create an [issue](https://github.com/iTwin/cesium-curated-content-samples/issues).
 
 Want to contribute by creating a pull request? Great! [Fork this repository](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) to get started.
 
@@ -13,11 +13,14 @@ Want to contribute by creating a pull request? Great! [Fork this repository](htt
 ## Prerequisites
 
 - [Git](https://git-scm.com/)
-`FIXME: `
+- [PNPM](https://pnpm.io/installation#using-corepack)
 
 ## Development Setup
 
-FIXME
+- `pnpm install` at the root to install all packages
+- `pnpm build` to build all packages
+- `cd /{sample directory}`
+- `npm run dev`
 
 ---
 
