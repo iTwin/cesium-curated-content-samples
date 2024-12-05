@@ -1,6 +1,3 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: cesium-curated-content-samples-ci
 
 on:
@@ -9,7 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,8 +16,10 @@ jobs:
           version: 9
       
       - run: pnpm install
+        working-directory: ../
       
       - run: pnpm build
+        working-directory: ../
     
 
       
