@@ -14,7 +14,7 @@ const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "qa-";
 const clientId = import.meta.env.VITE_CLIENT_ID;
 
 if (!clientId) {
-  throw new Error("Missing required environment variable 'clientId'");
+  throw new Error("Missing required environment variable 'VITE_CLIENT_ID'");
 }
 
 const authClient = await getBentleyAuthClient(clientId, imsPrefix);
