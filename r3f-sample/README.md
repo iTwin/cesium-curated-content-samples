@@ -6,15 +6,15 @@ This is a sample that demonstrates how to view a tileset in the [Cesium 3D Tiles
 
 In a .env file in the `r3f-sample` directory:
 
-- `VITE_IMS_PREFIX` - Bentley IMS authority prefix (should be "dev-", "qa-", or "") (optional, default is "qa-")
 - `VITE_CLIENT_ID` - Client ID needed to sign in with Bentley IMS (required)
+- `VITE_IMS_PREFIX` - Bentley IMS authority prefix (optional)
 - `VITE_ITWIN_ID` - iTwin Id of an iTwin. You will need to have permission to read this iTwin (optional, if no Id is provided the user's primary account iTwin will be used)
 
 ### Example
 
 ```
 VITE_CLIENT_ID="**YOUR CLIENT ID**"
-VITE_IMS_PREFIX ="qa-"
+VITE_IMS_PREFIX =""
 VITE_ITWIN_ID="**OPTIONAL ITWIN ID**"
 ```
 
@@ -26,7 +26,7 @@ In the root directory:
 pnpm install
 pnpm build
 cd r3f-sample
-npm run dev
+pnpm dev
 ```
 
 - Navigate in your browser to https://localhost:8080

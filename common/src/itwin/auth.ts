@@ -14,7 +14,7 @@ export async function getBentleyAuthClient(clientId: string, imsPrefix: string, 
 
   const authClient = new BrowserAuthorizationClient({
     authority: `https://${imsPrefix}ims.bentley.com`,
-    clientId: clientId,
+    clientId,
     scope,
     redirectUri,
     responseType: "code"

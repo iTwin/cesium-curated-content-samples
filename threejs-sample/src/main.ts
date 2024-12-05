@@ -10,7 +10,7 @@ import { GUI } from "lil-gui";
 import { TilesRenderer, LUNAR_ELLIPSOID, GlobeControls  } from "3d-tiles-renderer";
 import {  ITwinsAccessClient, ITwin, ITwinsAPIResponse} from "@itwin/itwins-client";
 
-const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "qa-";
+const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "";
 const clientId = import.meta.env.VITE_CLIENT_ID;
 
 if (!clientId) {
