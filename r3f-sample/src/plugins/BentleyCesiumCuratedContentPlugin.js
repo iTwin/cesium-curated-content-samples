@@ -44,7 +44,6 @@ export class BentleyCesiumCuratedContentPlugin {
   }
 
   fetchData( uri, options ) {
-
     return Promise.resolve().then( async () => {
       // wait for the token to refresh if loading
       if ( this._tokenRefreshPromise !== null ) {
