@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+package-lock.json
 
 threejs-3d-tiles-sample/public/models
 .env

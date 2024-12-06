@@ -10,7 +10,7 @@ import { Globe } from './globe';
 import { getBentleyAuthClient } from "common";
 import {  ITwinsAccessClient } from "@itwin/itwins-client";
 
-const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "qa-";
+const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "";
 const clientId = import.meta.env.VITE_CLIENT_ID;
 
 function App() {

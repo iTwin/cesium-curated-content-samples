@@ -1,6 +1,6 @@
 # cesium-curated-content-samples
 
-This repository contains samples and tutorials for how to use the [Cesium Curated Content](https://developer.bentley.com/apis/cesium-curated-content/) REST API to view [Cesium 3D Tiles](https://github.com/CesiumGS/3d-tiles) tilesets of iModels using different 3D libraries.
+This repository contains samples and tutorials for how to use the [Cesium Curated Content](https://developer.bentley.com/apis/cesium-curated-content/) REST API to view [Cesium 3D Tiles](https://github.com/CesiumGS/3d-tiles).
 
 - [Visualizing Cesium Moon Terrain using Three.js](threejs-sample)
 - [Visualizing Cesium OSM Buildings using Three.js and react-three-fiber](r3f-sample)

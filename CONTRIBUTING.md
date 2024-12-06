@@ -20,7 +20,7 @@ Want to contribute by creating a pull request? Great! [Fork this repository](htt
 - `pnpm install` at the root to install all packages
 - `pnpm build` to build all packages
 - `cd /{sample directory}`
-- `npm run dev`
+- `pnpm dev`
 
 ---
 
