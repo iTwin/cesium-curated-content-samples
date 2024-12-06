@@ -28,5 +28,3 @@ pnpm build
 cd threejs-sample
 pnpm dev
 ```
-
-- Navigate in your browser to https://localhost:8080
