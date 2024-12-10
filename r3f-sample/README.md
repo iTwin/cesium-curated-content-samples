@@ -2,7 +2,7 @@
 
 This is a sample that demonstrates how to view a tileset in the [Cesium 3D Tiles](https://github.com/CesiumGS/3d-tiles) format from the iTwin platform [cesium curated content](https://developer.bentley.com/apis/cesium-curated-content) in [three.js](https://threejs.org/), using [react-three-fiber (r3f)](https://r3f.docs.pmnd.rs/getting-started/introduction). This is done using [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS/tree/master), a package that implements a three.js renderer for 3D Tiles. For this sample, the [Cesium OSM Buildings](https://cesium.com/platform/cesium-ion/content/cesium-osm-buildings/) will be rendered.
 
-The Cesium Curated Content is an API available through the [iTwin Platform] (https://developer.bentley.com/).
+The Cesium Curated Content is an API available through the [iTwin Platform](https://developer.bentley.com/).
 
 ## Environment variables
 
