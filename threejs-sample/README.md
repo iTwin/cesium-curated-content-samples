@@ -12,7 +12,7 @@ In a .env file in the `threejs-sample` directory:
 - `VITE_IMS_PREFIX` - Bentley IMS authority prefix (optional)
 - `VITE_ITWIN_ID` - iTwin Id of an iTwin. You will need to have permission to read this iTwin (optional, if no Id is provided the user's primary account iTwin will be used)
 
-For an example of the `.env` file, an example has been provided [here](./.env.example)
+For an example of the `.env` file, an one has been provided [here](./.env.example)
 
 ## Authentication
 
