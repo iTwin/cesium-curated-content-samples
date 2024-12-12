@@ -8,7 +8,6 @@ import * as THREE from "three";
 import { getBentleyAuthClient, getCesiumMoonTerrianTiles } from "common";
 import { GUI } from "lil-gui";
 import { TilesRenderer, LUNAR_ELLIPSOID, GlobeControls  } from "3d-tiles-renderer";
-import {  ITwinsAccessClient, ITwin, ITwinsAPIResponse} from "@itwin/itwins-client";
 
 const imsPrefix = import.meta.env.VITE_IMS_PREFIX ?? "";
 const clientId = import.meta.env.VITE_CLIENT_ID;
@@ -20,15 +19,7 @@ if (!clientId) {
 const authClient = await getBentleyAuthClient(clientId, imsPrefix);
 const accessToken = await authClient.getAccessToken();
 
-let iTwinId = import.meta.env.VITE_ITWIN_ID;
-if (!iTwinId) {
-  const iTwinsAccessClient: ITwinsAccessClient = new ITwinsAccessClient(`https://${imsPrefix}api.bentley.com/itwins`);
-  const iTwinsResponse: ITwinsAPIResponse<ITwin> = await iTwinsAccessClient.getPrimaryAccountAsync(accessToken);
-
-  iTwinId = iTwinsResponse.data?.id;
-}
-
-const cesiumMoonTerrianTiles = await getCesiumMoonTerrianTiles(iTwinId, imsPrefix, accessToken);
+const cesiumMoonTerrianTiles = await getCesiumMoonTerrianTiles(imsPrefix, accessToken);
 
 var camera = {} as THREE.PerspectiveCamera;
 var controls = {} as GlobeControls;

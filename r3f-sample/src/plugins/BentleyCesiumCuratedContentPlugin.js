@@ -20,7 +20,7 @@ export class BentleyCesiumCuratedContentPlugin {
   }
 
   init(tiles) {
-    tiles.rootURL = `https://${this.imsPrefix}api.bentley.com/curated-content/cesium/96188/tiles?iTwinId=${this.itwinId}`;
+    tiles.rootURL = `https://${this.imsPrefix}api.bentley.com/curated-content/cesium/96188/tiles`;
 
     this.tiles = tiles;
     this.endpointURL = tiles.rootURL;

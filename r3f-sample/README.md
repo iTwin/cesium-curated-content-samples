@@ -10,7 +10,6 @@ In a .env file in the `r3f-sample` directory:
 
 - `VITE_CLIENT_ID` - SPA Application Client ID needed to sign in with Bentley IMS (required)
 - `VITE_IMS_PREFIX` - Bentley IMS authority prefix (optional)
-- `VITE_ITWIN_ID` - iTwin Id of an iTwin. You will need to have permission to read this iTwin (optional, if no Id is provided the user's primary account iTwin will be used)
 
 For an example of the `.env` file, an one has been provided [here](./.env.example)
 
