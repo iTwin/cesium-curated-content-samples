@@ -11,7 +11,7 @@ In a .env file in the `r3f-sample` directory:
 - `VITE_CLIENT_ID` - SPA Application Client ID needed to sign in with Bentley IMS (required)
 - `VITE_IMS_PREFIX` - Bentley IMS authority prefix (optional)
 
-For an example of the `.env` file, an one has been provided [here](./.env.example)
+For an example of the `.env` file, one has been provided [here](./.env.example)
 
 ## Authentication
 
