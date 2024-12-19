@@ -14,7 +14,7 @@ import { BentleyCesiumCuratedContentPlugin } from './plugins/BentleyCesiumCurate
 import { Canvas } from '@react-three/fiber';
 import { Environment  } from '@react-three/drei';
  
-export function Globe ({ accessToken, itwinId, imsPrefix }) {
+export function Globe ({ accessToken, imsPrefix }) {
   return (
     <Canvas
       frameloop='demand'
@@ -35,7 +35,7 @@ export function Globe ({ accessToken, itwinId, imsPrefix }) {
       <color attach="background" args={["#241100"]} />
 
       <TilesRenderer key={accessToken} group={ { rotation: [ - Math.PI / 2, 0, 0 ] } }>
-        <TilesPlugin plugin={ BentleyCesiumCuratedContentPlugin } args={ {accessToken, itwinId, imsPrefix} } />
+        <TilesPlugin plugin={ BentleyCesiumCuratedContentPlugin } args={ {accessToken, imsPrefix} } />
         <GlobeControls enableDamping={ true } />
         <TilesAttributionOverlay />
       </TilesRenderer>
